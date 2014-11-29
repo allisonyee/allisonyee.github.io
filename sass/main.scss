@@ -1,0 +1,22 @@
+// main.scss
+
+/*  Resets  */
+@import "vendors/meyer-reset";
+@import "base";
+
+/*  Mixins  */
+@import "mixins";
+
+/*  Modules & Pages  */
+@import "header";
+@import "home";
+
+
+body {
+    font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

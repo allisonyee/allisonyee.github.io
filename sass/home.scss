@@ -1,0 +1,34 @@
+// Home
+
+.container {
+    height: 100%;
+}
+
+section.intro {
+    width: 100%;
+    height: 100%;
+    background: url('https://farm8.staticflickr.com/7485/15903514242_836363f7aa_o.jpg') center;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+
+
+    .content {
+        @include vertical-align();
+        text-align: center;
+        line-height: 1.1;
+
+        .name {
+            font-size: 38px;
+            letter-spacing: 9px;
+        }
+        .tagline {
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+        .loc {
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+    }
+}
