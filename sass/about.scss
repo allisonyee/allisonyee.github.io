@@ -34,6 +34,38 @@
         font-size: 26px;
         font-weight: 300;
     }
+
+    .contact-links {
+        margin-top: 30px;
+        line-height: 1;
+        font-size: 5em;
+
+        .icon {
+            font-family: 'Socialico';
+        }
+
+        .iconplus {
+            font-family: 'Socialico Plus';
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 35px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: #343434;
+                @include prefix(transition, ease 0.3s);
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
 }
 
 .sidebar {

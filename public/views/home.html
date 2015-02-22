@@ -1,0 +1,63 @@
+<section class="intro">
+    <div class="content">
+        <div class="name">Allison Yee</div>
+        <div class="tagline">Designer & Developer</div>
+        <div class="loc">Berkeley, CA</div>
+    </div>
+</section>
+
+<section class="ha-waypoint work" data-animate-down="solid" data-animate-up="transparent" id="work">
+    <h2 class="section-title">Work</h2>
+
+    <div class="top-wide module">
+        <div class="label">Google Analytics Redesign</div>
+    </div>
+    <a ui-sref="workDetail({ name: 'checkit' })"><div class="top-medium module">
+        <div class="label">Check It</div>
+    </div></a>
+    <a ui-sref="workDetail({ name: 'graphicdesign' })"><div class="lower-tall module">
+        <div class="label">Graphic Design</div>
+    </div></a>
+    <a ui-sref="workDetail({ name: 'photography' })"><div class="mid-wide module">
+        <div class="label">Photography</div>
+    </div></a>
+    <a ui-sref="workDetail({ name: 'rescomp' })"><div class="lower-medium module">
+        <div class="label">Web Designer Work</div>
+    </div></a>
+    <a ui-sref="workDetail({ name: 'justright' })"><div class="lower-small module">
+        <div class="label">Mobile App</div>
+    </div></a>
+
+</section>
+
+<section class="contact">
+    <h2 class="section-title">Contact</h2>
+    
+    <ul class="contact-links">
+        <li><a href="https://github.com/allisonyee"><i class="fa fa-github fa-4x"></i><span>GitHub</span></a></li>
+        <li><a href="http://www.linkedin.com/in/yeeallison"><i class="fa fa-linkedin-square fa-4x"></i><span>LinkedIn</span></a></li>
+        <li><a href="http://twitter.com/_allicorinne"><i class="fa fa-twitter fa-4x"></i><span>Twitter</span></a></li>
+        <li><a href="mailto:alcyee@berkeley.edu"><i class="fa fa-envelope fa-4x"></i><span>Email</span></a></li>
+    </ul>
+    
+</section>
+
+<script src="../js/libs/waypoints.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    var $head = $( '#ha-header' );
+    $( '.ha-waypoint' ).each( function(i) {
+        var $el = $( this ),
+            animClassDown = $el.data( 'animateDown' ),
+            animClassUp = $el.data( 'animateUp' );
+
+        $el.waypoint( function( direction ) {
+            if( direction === 'down' && animClassDown ) {
+                $head.attr('class', 'ha-header ' + animClassDown);
+            }
+            else if( direction === 'up' && animClassUp ){
+                $head.attr('class', 'ha-header ' + animClassUp);
+            }
+        }, { offset: '100%' } );
+    } );
+</script>

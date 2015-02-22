@@ -5,6 +5,7 @@ $heading-font: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $body-font: 'Open Sans', sans-serif;
 
 /*  Colors  */
+$dark-grey: #343434;
 $accent: #42dca3;
 $light-accent: lighten($accent, 30%);
 
@@ -19,6 +20,18 @@ $light-accent: lighten($accent, 30%);
 @import "header";
 @import "home";
 @import "about";
+
+
+/*  Credit: www.fontfabric.com  */
+@font-face {
+  font-family: 'Socialico';
+  src: url('/public/css/fonts/Socialico.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Socialico Plus';
+  src: url('/public/css/fonts/SocialicoPlus.otf') format('otf');
+}
 
 a {
     text-decoration: none;

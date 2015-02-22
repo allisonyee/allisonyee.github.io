@@ -15,7 +15,7 @@
     }
 
     &.solid {
-        background-color: #444;
+        background-color: $dark-grey;
     }
 }
 
@@ -34,16 +34,16 @@ ul.nav {
         font-size: 16px;
         letter-spacing: 2px;
         vertical-align: middle;
-    }
 
-    li.title {
-        font: 35px "Sofia";
-        text-transform: none;
-        letter-spacing: 0px;
-    }
+        &.title {
+            font: 35px "Sofia";
+            text-transform: none;
+            letter-spacing: 0px;
+        }
 
-    li:last-of-type {
-        margin-right: 0;
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 }
 
