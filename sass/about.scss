@@ -1,0 +1,78 @@
+// About
+
+.ig-stream {
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+.ig-photo {
+    width: 20%;
+    float: left;
+
+    img {
+        max-width: 100%;
+        opacity: 0.75;
+        @include prefix(transition, 0.2s);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.main-content {
+    width: 70%;
+    float: left;
+    padding: 0 80px;
+
+    h2 {
+        font: 30px $heading-font;
+        margin-bottom: 10px;
+    }
+
+    .about-me {
+        font-size: 26px;
+        font-weight: 300;
+    }
+}
+
+.sidebar {
+    width: 30%;
+    float: right;
+    padding: 0 50px;
+
+    h3 {
+        font: 24px $heading-font;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    ul.skills {
+        font-size: 18px;
+        font-weight: 300;
+
+        li {
+            padding-left: 1em;
+        }
+
+        li:before {
+            content: "◆";
+            color: $accent;
+            margin-right: 15px;
+            font-weight: 700;
+        }
+    }
+}
+
+.link {
+    padding: 0 5px;
+    border-bottom: 2px solid $accent;
+    @include prefix(transition, ease 0.3s);
+
+    &:hover {
+        background-color: $light-accent;
+    }
+}

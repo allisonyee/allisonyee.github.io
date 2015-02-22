@@ -1,5 +1,13 @@
 // main.scss
 
+/*  Font Stacks  */
+$heading-font: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+/*  Colors  */
+$accent: #42dca3;
+$light-accent: lighten($accent, 30%);
+
 /*  Resets  */
 @import "vendors/meyer-reset";
 @import "base";
@@ -10,13 +18,19 @@
 /*  Modules & Pages  */
 @import "header";
 @import "home";
-
-
-body {
-    font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
+@import "about";
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+.container {
+    height: 100%;
+}
+
+.sub-container {
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 75px auto 75px auto;
 }
