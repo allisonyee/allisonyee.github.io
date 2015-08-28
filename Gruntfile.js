@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'public/js/app.min.js': ['js/**/*.js', 'js/*.js']
+          'js/app.min.js': ['js/**/*.js', 'js/*.js']
         }
       }
     },
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'public/css/main.css' : 'sass/main.scss'
+          'css/main.css' : 'sass/main.scss'
         }
       }
     },
