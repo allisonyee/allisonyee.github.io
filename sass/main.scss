@@ -14,14 +14,40 @@
 
 
 /*  Credit: www.fontfabric.com  */
-@font-face {
-  font-family: 'Socialico';
-  src: url('/public/css/fonts/Socialico.otf') format('otf'),
-}
+// @font-face {
+//   font-family: 'Socialico';
+//   src: url('/css/fonts/Socialico.otf') format('otf');
+// }
+
+// @font-face {
+//   font-family: 'Socialico Plus';
+//   src: url('/css/fonts/SocialicoPlus.otf') format('otf');
+// }
 
 @font-face {
   font-family: 'Socialico Plus';
-  src: url('/public/css/fonts/SocialicoPlus.otf') format('otf');
+  src: url('/css/fonts/socialico_plus-webfont.eot');
+  src: url('/css/fonts/socialico_plus-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/css/fonts/socialico_plus-webfont.woff2') format('woff2'),
+       url('/css/fonts/socialico_plus-webfont.woff') format('woff'),
+       url('/css/fonts/socialico_plus-webfont.ttf') format('truetype'),
+       url('/css/fonts/socialico_plus-webfont.svg#socialico_plusregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Socialico';
+  src: url('/css/fonts/socialico-webfont.eot');
+  src: url('/css/fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/css/fonts/socialico-webfont.woff2') format('woff2'),
+       url('/css/fonts/socialico-webfont.woff') format('woff'),
+       url('/css/fonts/socialico-webfont.ttf') format('truetype'),
+       url('/css/fonts/socialico-webfont.svg#socialicoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 a {

@@ -5,13 +5,13 @@ var app = express();
 var router = express.Router();
 
 // static files
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 
 // routes 
 // require('./app/routes')(app, router);
 
 app.use(function(req, res) {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + 'index.html');
 });
 
 // start app 
