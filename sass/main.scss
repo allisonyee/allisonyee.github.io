@@ -11,19 +11,9 @@
 @import "header";
 @import "home";
 @import "about";
-
+@import "work";
 
 /*  Credit: www.fontfabric.com  */
-// @font-face {
-//   font-family: 'Socialico';
-//   src: url('/css/fonts/Socialico.otf') format('otf');
-// }
-
-// @font-face {
-//   font-family: 'Socialico Plus';
-//   src: url('/css/fonts/SocialicoPlus.otf') format('otf');
-// }
-
 @font-face {
   font-family: 'Socialico Plus';
   src: url('/css/fonts/socialico_plus-webfont.eot');
@@ -63,6 +53,7 @@ a {
   max-width: 1400px;
   overflow: hidden;
   margin: 75px auto 0 auto;
+  padding-top: 30px;
 }
 
 .section-container {
