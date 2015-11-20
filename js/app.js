@@ -8,7 +8,7 @@ var app = angular.module('alliApp', ['ui.router', 'ngTouch']);
 // }]);
 
 app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", '$provide', function($stateProvider, $urlRouterProvider, $locationProvider, $provide) {
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise("/");
 
   $stateProvider
