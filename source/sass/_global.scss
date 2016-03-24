@@ -1,0 +1,22 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-bg;
+  color: $color-fg;
+  font-family: $font-family;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  // border-bottom: 1px solid #fff;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}

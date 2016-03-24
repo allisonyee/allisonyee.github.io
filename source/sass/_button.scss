@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  width: 150px;
+  margin-right: 10px;
+  padding: 7px 0;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 0;
+
+  &--accent-one {
+    background-color: $accent-blue;
+  }
+
+  &--accent-two {
+    background-color: $accent-peach;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

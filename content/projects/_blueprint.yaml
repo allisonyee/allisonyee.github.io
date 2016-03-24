@@ -1,0 +1,5 @@
+path: "{root}/project/{slug}/"
+view: /views/project.html
+title: project
+
+body_class: body--inverted people

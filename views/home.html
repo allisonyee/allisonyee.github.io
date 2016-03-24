@@ -1,67 +1,17 @@
-<section class="intro">
-  <div class="intro_content">
-    Designer & developer.<br>
-    Wears too much striped clothing.</br>
-    Shutter happy.
-  </div>
-</section>
+{% extends "/views/base.html" %}
+{% block main %}
+<div class="hero">
+  <div class="title"><img class="hero--title" src="{{g.static('/source/images/name.png').url.path}}"></div>
+  <div class="hero--subtitle">{{doc.hero.subtitle|safe}}</div>
+  <a href="#work" class="button button--accent-one">Work</a>
+  <a href="/blog" class="button button--accent-two">Blog</a>
+</div>
 
-<section role="main">
-
-  <h2 class="section_title work_title">Work</h2>
-
-  <section class="work">
-    <a ui-sref="workDetail({ name: 'buddywatch' })"><div class="project">
-      <img class="proj_image" src="../img/buddywatch.jpg">
-      <div class="proj_info_wrapper">
-        <div class="proj_info">
-          <div class="proj_name">Buddy Watch</div>
-          <div class="proj_category">Mobile UI Design</div>
-        </div>
-      </div>
-    </div></a>
-    <a ui-sref="workDetail({ name: 'spokeo' })"><div class="project">
-      <img class="proj_image" src="../img/spokeo.jpg">
-      <div class="proj_info_wrapper">
-        <div class="proj_info">
-          <div class="proj_name">Spokeo</div>
-          <div class="proj_category">Web Development</div>
-        </div>
-      </div>
-    </div></a>
-    <a ui-sref="workDetail({ name: 'rescomp' })"><div class="project">
-      <img class="proj_image" src="../img/rescomp.jpg">
-      <div class="proj_info_wrapper">
-        <div class="proj_info">
-          <div class="proj_name">Residential Computing</div>
-          <div class="proj_category">Web Development</div>
-        </div>
-      </div>
-    </div></a>
-    <a ui-sref="workDetail({ name: 'checkit' })"><div class="project">
-      <img class="proj_image" src="../img/todo.gif">
-      <div class="proj_info_wrapper">
-        <div class="proj_info">
-          <div class="proj_name">To-Do App</div>
-          <div class="proj_category">Web Development</div>
-        </div>
-      </div>
-    </div></a>
-  </section>
-
-  <section class="contact">
-    <h2 class="section_title contact_title">Contact</h2>
-    
-    <ul class="contact_links">
-      <li class="contact_link_icon iconplus"><a href="https://github.com/allisonyee">z</a></li>
-      <li class="contact_link_icon icon"><a href="http://www.linkedin.com/in/yeeallison">i</a></li>
-      <li class="contact_link_icon icon"><a href="http://twitter.com/_allicorinne">l</a></li>
-      <li class="contact_link_icon iconplus"><a href="https://instagram.com/_allicorinne/">i</a></li>
-      <li class="contact_link_icon iconplus"><a href="mailto:alcyee@berkeley.edu">m</a></li>
-    </ul>
-  </section>
-
-</section><!-- main -->
-
-<!-- <script src="../js/libs/jquery.waypoints.min.js"></script> -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<ul class="projects">
+{% for project in g.docs('projects', order_by='order') %}
+  <li class="project">
+    <img src="{{g.static(project.thumbnail).url.path}}">
+  </li>
+{% endfor %}
+<ul>
+{% endblock %}

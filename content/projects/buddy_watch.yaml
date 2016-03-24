@@ -1,0 +1,19 @@
+$title: Buddy Watch
+$order: 2
+thumbnail: /source/images/buddy_watch/buddy_watch_thumb.jpg
+thumbnail_hover:
+body_class: buddy-watch
+accent_color: A4DA13
+
+categories: Mobile, UI/UX
+intro: "During the Fall 2015 semester, I worked with three other students to design a mobile UI for Buddy Watch, a personal safety app targeted towards college students who are walking alone at any potentially dangerous time or place. This project was a great opportunity because we were able to start the design from scratch and take on a product that was completely relevant to us."
+flow: |
+  "One scenario of the app might go something like this:
+  1. User inputs destination
+  2. User selects who he/she wants to contact to standby during walk
+  3. Once at least one person accepts, user starts walk
+  4. Alarm is triggered due to vigorous shaking of phone in pocket
+  5. User dismisses alarm by pressing a button or tapping on the phone
+  6. User encounters a predator and gets pushed to the ground, triggering another alarm
+  7. Buddy receives alert and location of where it went off
+  8. Buddy calls UCPD from app"
