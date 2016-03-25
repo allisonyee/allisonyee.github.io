@@ -1,7 +1,10 @@
 {% extends "/views/base.html" %}
 {% block main %}
 <div class="hero">
-  <div class="title"><img class="hero--title" src="{{g.static('/source/images/name.png').url.path}}"></div>
+  <div class="title">
+    {% include "/views/_title_svg.html" %}
+    <!-- <img class="hero--title" src="{{g.static('/source/images/name.png').url.path}}"> -->
+  </div>
   <div class="hero--subtitle">{{doc.hero.subtitle|safe}}</div>
   <a href="#work" class="button button--accent-one">Work</a>
   <a href="/blog" class="button button--accent-two">Blog</a>

@@ -5,7 +5,7 @@ $view: /views/home.html
 
 hero:
   title: Allison Yee
-  subtitle: Hi! I’m Allison, one of the many students at UC Berkeley studying Computer Science with a love for design and web development. This summer, I'll be joining the team at <a href="https://slack.com/" target="_blank">Slack</a>. I develop for <a href="http://blinkk.com/" target="_blank">Blinkk</a>, and previously, I worked at <a href="https://spokeo.com/" target="_blank">Spokeo</a> and <a href="http://www.rescomp.berkeley.edu/">Residential Computing</a>. 
+  subtitle: Hi! I’m Allison, one of the many students at UC Berkeley studying Computer Science with a love for design and web development. This summer, I'll be joining the team at <a href="https://slack.com/" target="_blank">Slack</a>. I develop for <a href="http://blinkk.com/" target="_blank">Blinkk</a>, and previously, I worked at <a href="https://spokeo.com/" target="_blank">Spokeo</a> and <a href="http://www.rescomp.berkeley.edu/" target="_blank">Residential Computing</a>. 
   ctas:
   - title: Work
   - title: Blog
