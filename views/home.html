@@ -1,20 +1,31 @@
 {% extends "/views/base.html" %}
 {% block main %}
-<div class="hero">
-  <div class="title">
+<section class="home">
+
+<section class="hero">
+  <div class="hero--title">
     {% include "/views/_title_svg.html" %}
     <!-- <img class="hero--title" src="{{g.static('/source/images/name.png').url.path}}"> -->
   </div>
   <div class="hero--subtitle">{{doc.hero.subtitle|safe}}</div>
-  <a href="#work" class="button button--accent-one">Work</a>
-  <a href="/blog" class="button button--accent-two">Blog</a>
-</div>
+</section>
 
-<ul class="projects">
-{% for project in g.docs('projects', order_by='order') %}
-  <li class="project">
-    <img src="{{g.static(project.thumbnail).url.path}}">
-  </li>
-{% endfor %}
-<ul>
+<section class="work">
+  <ul class="projects grid">
+  {% for project in g.docs('projects', order_by='order') %}
+    <li class="project">
+      <img src="{{g.static(project.thumbnail).url.path}}">
+      <div class="project--detail">
+        <img src="">
+        <a href="{{project.url.path}}" data-project="{{project.body_class}}">Read more</a>
+        <div id="cd-loading-bar" data-scale="1" class="index"></div>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+</section>
+
+
 {% endblock %}

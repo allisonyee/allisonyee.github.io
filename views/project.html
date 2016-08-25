@@ -1,3 +1,16 @@
 {% extends "/views/base.html" %}
 {% block main %}
+<section class="project">
+
+<div class="project--header {{doc.body_class}}"></div>
+<div class="inner {{doc.body_class}}">
+  <div class="project--title">{{doc.title}}</div>
+  {% if doc.demo_url %}<a href="{{doc.demo_url}}" target="_blank" class="button button--{{doc.body_class}}">Demo</a>{% endif %}
+  <div class="project--categories">{{doc.categories}}</div>
+
+  <!-- <p class="project--body">{{doc.intro}}</p> -->
+  {{doc.body_text|safe}}
+</div>
+
+</section>
 {% endblock %}

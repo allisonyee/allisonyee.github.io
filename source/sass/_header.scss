@@ -7,6 +7,12 @@ header {
   }
 }
 
+.header--dark {
+  a {
+    color: $text-color;
+  }
+}
+
 nav {
   float: right;
 

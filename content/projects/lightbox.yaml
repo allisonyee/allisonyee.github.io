@@ -1,4 +1,10 @@
 $title: Lightbox
-$order: 1
+$order: 2
 thumbnail: /source/images/lightbox/lightbox_thumb.jpg
 thumbnail_hover:
+body_class: lightbox
+accent_color: CCCCCC
+demo_url: http://allisonyee.com/lightbox
+
+body_text: |
+  <p class="project--body">Lightbox is a photo viewer built with vanilla JavaScript and CSS animations. The site uses the Flickr API and features instant search.</p>

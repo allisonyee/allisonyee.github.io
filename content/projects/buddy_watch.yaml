@@ -1,12 +1,21 @@
 $title: Buddy Watch
-$order: 2
+$order: 4
 thumbnail: /source/images/buddy_watch/buddy_watch_thumb.jpg
 thumbnail_hover:
 body_class: buddy-watch
 accent_color: A4DA13
 
+demo_url: https://invis.io/B58B7BYRP
 categories: Mobile, UI/UX
-intro: "During the Fall 2015 semester, I worked with three other students to design a mobile UI for Buddy Watch, a personal safety app targeted towards college students who are walking alone at any potentially dangerous time or place. This project was a great opportunity because we were able to start the design from scratch and take on a product that was completely relevant to us."
+body_text: |
+  <p class="project--body">During the Fall 2015 semester, I worked with three other students to design a mobile UI for Buddy Watch, a personal safety app targeted towards college students who are walking alone at any potentially dangerous time or place. This project was a great opportunity because we were able to start the design from scratch and take on a product that was completely relevant to us.</p>
+
+  <p class="project--body"><img src="/static/images/buddy_watch/lo-fi-sketches.jpg"></p>
+  <p class="project--body">After defining a few use cases and sketching out the general flow of the app, we created some mid fidelity mockups to present to our client. One interaction that was particularly hard for us to get right was the screen where you invite your buddies to watch over you. We needed to make it clear who you were inviting and whether or not they had responded yet.</p>
+  <p class="project--body"><img src="/static/images/buddy_watch/mid-fidelity.jpg"></p>
+  <p class="project--body">After a couple of meetings with our client, we gained a better understanding of what the product needed and iterated on the design. For example, it didn't make sense to give the user a route to take home because the fastest route is not necessarily the safest.</p> 
+  <p class="project--body"><img src="/static/images/buddy_watch/final-screens.jpg"></p>
+  <p class="project--body">Check out the entire demo on InVision <a href="https://invis.io/B58B7BYRP">here</a></p>
 flow: |
   "One scenario of the app might go something like this:
   1. User inputs destination
@@ -17,3 +26,4 @@ flow: |
   6. User encounters a predator and gets pushed to the ground, triggering another alarm
   7. Buddy receives alert and location of where it went off
   8. Buddy calls UCPD from app"
+description: 

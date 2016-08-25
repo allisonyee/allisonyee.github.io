@@ -8,8 +8,8 @@
   text-align: center;
 
   &--title {
-    margin-top: 30px;
-    width: 450px;
+    margin-top: 40px;
+    // width: 450px;
   }
 
   &--subtitle {
@@ -21,16 +21,56 @@
   }
 }
 
+.grid {
+  padding: 20px 20px 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  @include mobile {
+    padding: 30px;
+  }
+}
+
 ul.projects {
   list-style: none;
   text-align: center;
 }
+
 li.project {
   display: inline-block;
-  width: 440px;
-  padding: 20px;
+  width: 400px;
+  margin: 20px;
+  text-align: left;
+  position: relative;
+  @include mobile {
+    width: 100%;
+    min-width: 300px;
+    margin: 0 0 30px 0;
+  }
 
   img {
-    width: 400px;
+    max-width: 100%;
+    display: block;
+    position: relative;
   }
+
+  &:hover .project--detail {
+    opacity: 1;
+    transform: translate(15px, 15px);
+  }
+}
+
+.project--detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // margin: 20px;
+  padding: 20px;
+  background: #2c3f52;
+  color: #ed4e6e;
+  opacity: 0;
+  text-align: center;
+  backface-visibility: hidden;
+  transition: transform 0.3s, opacity 0.3s;
 }

@@ -32,11 +32,13 @@ gulp.task('sass', function() {
 
 
 gulp.task('minify_js', function() {
-  return gulp.src([
-    Path.JS_TEMP_DIR + 'build.min.js'
-  ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
+  return gulp.src('./source/js/*.js')
+  // return gulp.src([
+    // Path.JS_SOURCES + 'build.min.js'
+    // Path.JS_TEMP_DIR + 'build.min.js'
+  // ])
+    // .pipe(concat('main.min.js'))
+    // .pipe(uglify())
     .pipe(gulp.dest(Path.JS_OUT_DIR));
 });
 

@@ -1,6 +1,6 @@
 ---
 $title: Home
-$path: /
+$path: /home
 $view: /views/home.html
 
 hero:

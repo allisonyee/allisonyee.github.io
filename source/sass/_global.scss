@@ -3,7 +3,7 @@
 }
 
 body {
-  background: $color-bg;
+  background: #fff;
   color: $color-fg;
   font-family: $font-family;
   font-weight: 300;
@@ -19,4 +19,8 @@ a {
 .inner {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.emoji {
+  font-family: "Apple Color Emoji";
 }

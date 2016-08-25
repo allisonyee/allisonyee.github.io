@@ -1,11 +1,19 @@
 $l_length: 38.37266540527344;
 $li_length: 70.34159088134766;
 $so_length: 105.24887084960938;
+$initial_delay: .3s;
+$a_time: .55s;
+$a2_time: .3s;
+$l_time: .2s;
+$li_time: .35s;
+$dot_time: .1s;
+$so_time: .55s;
+$n_time: .4s;
+$yee_time: 1s;
 
 #svgWrapper {
   display:inline-block;
   width:500px;
-  cursor:pointer;
   
   svg {
     stroke-width:3;
@@ -16,51 +24,56 @@ $so_length: 105.24887084960938;
       .a {
         stroke-dasharray: 76.28;
         stroke-dashoffset: 76.3;
-        stroke-width:1;
-        animation: allison-a .5s linear forwards .25s;
+        stroke-width:5;
+        animation: allison-a $a_time linear forwards $initial_delay;
       }
       .a-2 {
         stroke-dasharray: 28.9;
         stroke-dashoffset: 29.2;
         stroke-width:4;
-        animation: allison-a-2 .4s linear forwards .8s;
+        animation: allison-a-2 $a2_time linear forwards $initial_delay+$a_time;
       }
       .l {
         stroke-dasharray: $l_length $l_length;
         stroke-dashoffset: 38.4;
         stroke-width:5;
-        animation: allison-l .4s linear forwards 1.3s;
+        animation: allison-l $l_time linear forwards $initial_delay+$a_time+$a2_time;
       }
       
-      .l-2 {
+      .li {
         stroke-dasharray: 70.2;
         stroke-dashoffset: $li_length;
         stroke-width:5;
-        animation: allison-ll .75s linear forwards 1.8s;
+        animation: allison-ll $li_time linear forwards $initial_delay+$a_time+$a2_time+$l_time;
+      }
+      .dot {
+        stroke-dasharray: 5.05;
+        stroke-dashoffset: 5.1;
+        stroke-width: 5;
+        animation: allison-dot $dot_time linear forwards $initial_delay+$a_time+$a2_time+$l_time+$li_time;
       }
       .so {
         stroke-dasharray: 104.7;
         stroke-dashoffset: 105.24887084960938;
         stroke-width:5;
-        animation: allison-so .75s linear forwards 2.7s;
+        animation: allison-so $so_time linear forwards $initial_delay+$a_time+$a2_time+$l_time+$li_time+$dot_time;
       }
       .n {
         stroke-dasharray: 57.1;
         stroke-dashoffset: 57.21293258666992;
         stroke-width:5;
-        animation: allison-n .75s linear forwards 3.5s;
+        animation: allison-n $n_time linear forwards $initial_delay+$a_time+$a2_time+$l_time+$li_time+$dot_time+$so_time;
+      }
+      .yee {
+        stroke-dasharray: 236;
+        stroke-dashoffset: 236.71188354492188;
+        stroke-width:8;
+        animation: allison-yee $yee_time linear forwards $initial_delay+$a_time+$a2_time+$l_time+$li_time+$dot_time+$so_time+$n_time+$dot_time;
       }
       
       
     }
     
-  }
-  
-  &:not(.clicked):hover {
-    svg {
-      transform:scale(.9);
-      transition:transform .3s cubic-bezier(.3,.86,.61,1.63);
-    }
   }
 }
 
@@ -131,4 +144,42 @@ $so_length: 105.24887084960938;
   100% {
     stroke-dashoffset: 0;
   }
+}
+@keyframes allison-dot {
+  0% {
+    stroke-dashoffset: 5;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes allison-yee {
+  0% {
+    stroke-dashoffset: 236.71188354492188;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  // -webkit-animation-name: fadeInUp;
+  // animation-name: fadeInUp;
+  opacity: 0;
+  animation: fadeInUp .6s linear forwards $initial_delay+$a_time+$a2_time+$l_time+$li_time+$dot_time+$so_time+$n_time+$dot_time+1s;
+  // animation-delay: $initial_delay+$a_time+$a2_time+$l_time+$li_time+$dot_time+$so_time+$n_time+$dot_time+0.3s;
 }
