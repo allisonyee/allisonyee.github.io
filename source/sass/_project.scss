@@ -1,0 +1,47 @@
+.project--header {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+  &.buddy-watch {
+    background-image: url('/static/images/buddy_watch/header.jpg');
+  }
+  &.owl {
+    background-image: url('/static/images/owl/header.jpg');
+  }
+  &.lightbox {
+    background-image: url('/static/images/lightbox/header.jpg');
+  }
+  &.blinkk {
+    background-image: url('/static/images/blinkk/header.jpg');
+  }
+}
+
+.project--title {
+  display: inline-block;
+  margin: 40px 20px 10px 0;
+  font-size: 36px;
+}
+
+.button {
+  background-color: #CCCCCC;
+  &--buddy-watch {
+    background-color: #A4DA13;
+  }
+}
+
+.project--categories {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.project--body {
+  max-width: 680px;
+  margin: 40px auto;
+  line-height: 1.5;
+  font-size: 18px;
+
+  img {
+    max-width: 100%;
+  }
+}

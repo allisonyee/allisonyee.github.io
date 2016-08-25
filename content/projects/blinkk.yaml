@@ -1,0 +1,9 @@
+$title: Blinkk
+$order: 3
+thumbnail: /source/images/blinkk/blinkk_thumb.jpg
+thumbnail_hover:
+body_class: blinkk
+
+body_text: |
+  <p class="project--body"><img src="/static/images/blinkk/cape.png"><p>
+  <p class="project--body"><img src="/static/images/blinkk/fiphones.png"></p>
