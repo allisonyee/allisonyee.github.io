@@ -8,6 +8,10 @@ body_class: owl
 body_text: |
   <p class="project--body">In Spring 2016, I took a class titled Critical Making, a class crosslisted as Computer Science and Mechanical Engineering that focused on the design and prototyping of digital devices. For our Final Provocation, my group and I decided to use a backpack as a wearable technology with the goal of keeping students safe when walking home at night.</p>
 
+  <p class="project--body"><img src="/static/images/owl/models.png"></p>
+
   <p class="project--body">Originally we wanted to make a standalone object that could be an attachment to a backpack you own, but we were constrained by the technology that would have to fit inside. We decided that a backpack design would be more straightforward and easier to implement. Our final design was a fully-equipped backpack that featured a panic button, a report button, and an online night vision livestream. Friends tuned into the livestream can send you alerts from home in case they see anything, and the reports add to a heatmap resource. When the panic button is hit, a loud siren goes off and your friends receive a text with your location.</p>
 
   <p class="project--body">This project and the other projects I worked on in Critical Making were especially challenging because I had no previous experience with electronics. I learned how to program for Arduino and Raspberry Pi, but I was also able to use my knowledge in web development to add to our projects.</p>
+
+  <p class="project--body"><img src="/static/images/owl/backpack.jpg"></p>
