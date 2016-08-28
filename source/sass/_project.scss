@@ -30,9 +30,33 @@
   }
 }
 
+.project--detail {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.project--name {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+
 .project--categories {
-  font-size: 24px;
+  font-size: 18px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.button--project {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .project--body {

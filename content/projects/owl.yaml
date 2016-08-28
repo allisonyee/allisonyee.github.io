@@ -1,7 +1,7 @@
 $title: Owl
 $order: 1
 thumbnail: /source/images/owl/owl_thumb.jpg
-thumbnail_hover:
+cat: Product Design
 demo_url: https://www.youtube.com/watch?v=ThpB1Gd3bTc&list=PLbok9t2URfW1XLd5_2K3a-gQMDtym8f4C&index=4
 body_class: owl
 

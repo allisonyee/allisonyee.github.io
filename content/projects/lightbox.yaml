@@ -1,7 +1,7 @@
 $title: Lightbox
 $order: 2
 thumbnail: /source/images/lightbox/lightbox_thumb.jpg
-thumbnail_hover:
+cat: Web Development
 body_class: lightbox
 accent_color: CCCCCC
 demo_url: http://allisonyee.com/lightbox

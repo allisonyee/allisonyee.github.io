@@ -4,7 +4,8 @@
 
 <section class="hero">
   <div class="hero--title">
-    {% include "/views/_title_svg.html" %}
+    Allison Yee
+    <!-- {% include "/views/_title_svg.html" %} -->
     <!-- <img class="hero--title" src="{{g.static('/source/images/name.png').url.path}}"> -->
   </div>
   <div class="hero--subtitle">{{doc.hero.subtitle|safe}}</div>
@@ -16,9 +17,9 @@
     <li class="project">
       <img src="{{g.static(project.thumbnail).url.path}}">
       <div class="project--detail">
-        <img src="">
-        <a href="{{project.url.path}}" data-project="{{project.body_class}}">Read more</a>
-        <div id="cd-loading-bar" data-scale="1" class="index"></div>
+        <div class="project--name">{{project.title}}</div>
+        <div class="project--categories">{{project.cat}}</div>
+        <a class="button--project" href="{{project.url.path}}" data-project="{{project.body_class}}">Read more</a>
       </div>
     </li>
   {% endfor %}

@@ -12,3 +12,14 @@ static_dirs:
   serve_at: /static/images/
 - static_dir: /dist/
   serve_at: /static/
+
+deployments:
+
+  default:                # Deployment name.
+    destination: local    # Destination kind.
+    out_dir: ~/out/       # Parameters for "local" destination.
+
+  github:
+    destination: git
+    repo: https://github.com/allisonyee/allisonyee.github.io.git
+    branch: master
