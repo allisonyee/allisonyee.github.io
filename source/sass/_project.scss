@@ -19,6 +19,7 @@
 
 .project--title {
   display: inline-block;
+  font-family: "PlayFair Display", serif;
   margin: 40px 20px 10px 0;
   font-size: 36px;
 }
@@ -51,6 +52,8 @@
 
 .button--project {
   display: inline-block;
+  width: 175px;
+  align-self: center;
   margin-top: 20px;
   padding: 10px 15px;
   border: 1px solid #fff;
